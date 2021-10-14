@@ -29,11 +29,11 @@ public class PlayerMove : MonoBehaviour
             jump = true;
         }
 
-        if (Input.GetButtonDown("Crouch"))
+        if (Input.GetAxisRaw("Vertical") == -1f)
         {
             crouch = true;
         }
-        else if(Input.GetButtonUp("Crouch"))
+        else
         {
             crouch = false;
         }
