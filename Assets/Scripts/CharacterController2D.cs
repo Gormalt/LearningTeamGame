@@ -19,6 +19,11 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 
+	//Simon double jump - correct these areas if wrong
+	//I don't remember if i should private, public, etc. means... feel free to correct
+	int extraJumps = 1;
+	int tempJumps = 0;
+
 	[Header("Events")]
 	[Space]
 
@@ -123,13 +128,29 @@ public class CharacterController2D : MonoBehaviour
 				Flip();
 			}
 		}
+		
+		//Simon double jump - resets jumps left
+		if (m_Grounded)
+		{
+			tempJumps = extraJumps;
+		}
+
 		// If the player should jump...
 		if (m_Grounded && jump)
 		{
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-		}
+		
+		//Simon added function to check for double jumping
+		} else if (tempJumps > 0){
+            if (jump)
+            {
+				m_Grounded = false;
+				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				tempJumps --;
+			}
+        }
 	}
 
 
