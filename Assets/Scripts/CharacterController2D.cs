@@ -158,8 +158,6 @@ public class CharacterController2D : MonoBehaviour
 				tempJumps --;
 			}
         }
-		}
-		
 		else if (!m_Grounded && m_IsTouchingFront && jump && move != 0)
 		{
 			m_IsTouchingFront = false;
