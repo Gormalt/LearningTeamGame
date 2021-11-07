@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 8019535818791571611}
   - component: {fileID: 8019535818791571612}
   - component: {fileID: 8019535818791571613}
+  - component: {fileID: 482124466}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -334,3 +335,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 8019535818295396031}
   bulletPrefab: {fileID: 6235639038332129504, guid: 6369276293a3bd643b7eb24b9dc86b77, type: 3}
+--- !u!114 &482124466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8019535818791571614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85459115889cbdb46b81624461ded1cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  currentHealth: 0
+  damageTaken: 1
+  invincible: 0
+  invincibleTimer: 2
+  healthBar: {fileID: 0}

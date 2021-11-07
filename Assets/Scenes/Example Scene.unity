@@ -981,6 +981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BasicEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5202923691990191875, guid: 7a379ee2de368f8409362ab43097a69d, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6167160580930197625, guid: 7a379ee2de368f8409362ab43097a69d, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1029,7 +1033,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8534065291060271406, guid: 7a379ee2de368f8409362ab43097a69d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7a379ee2de368f8409362ab43097a69d, type: 3}
 --- !u!1 &1352764188
 GameObject:
@@ -1348,7 +1353,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 5
   m_WholeNumbers: 1
-  m_Value: 3
+  m_Value: 5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1365,7 +1370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5096646678426181262, guid: 399d2989db213e547ab083068be35692, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5096646678426181262, guid: 399d2989db213e547ab083068be35692, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1416,9 +1421,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 482124466, guid: 0996f9f95c9aea34da206b4084d8025e, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1869276096}
     - target: {fileID: 8019535818791571559, guid: 0996f9f95c9aea34da206b4084d8025e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8019535818791571559, guid: 0996f9f95c9aea34da206b4084d8025e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1459,6 +1468,10 @@ PrefabInstance:
     - target: {fileID: 8019535818791571559, guid: 0996f9f95c9aea34da206b4084d8025e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8019535818791571608, guid: 0996f9f95c9aea34da206b4084d8025e, type: 3}
+      propertyPath: m_GravityScale
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8019535818791571614, guid: 0996f9f95c9aea34da206b4084d8025e, type: 3}
       propertyPath: m_Name
