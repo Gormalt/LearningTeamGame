@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8830172313884533415}
   - component: {fileID: 1035784988433000535}
   - component: {fileID: 1837879074242774504}
+  - component: {fileID: -6156915956764269529}
   m_Layer: 0
   m_Name: BasicEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,7 +105,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &1035784988433000535
 BoxCollider2D:
@@ -144,3 +145,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb5baa24b389bb42b68bf32b9c18e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6156915956764269529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5202923691990191875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10658743a2c483d42bc17672793dae91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxEnemyHealth: 2
+  currentHealth: 0
+  damageTaken: 1
