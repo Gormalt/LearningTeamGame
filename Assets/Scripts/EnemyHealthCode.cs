@@ -9,12 +9,10 @@ public class EnemyHealthCode : MonoBehaviour
     public int currentHealth;
     public int damageTaken = 1;
 
-    public HealthBarScript healthBar;
 
     void Start()
     {
         currentHealth = maxEnemyHealth;
-        healthBar.SetMaxHealth(maxEnemyHealth);
     }
 
     void Update()
@@ -25,18 +23,12 @@ public class EnemyHealthCode : MonoBehaviour
         }
     }
 
-    //when you collide with something tagged as enemy
-    //and you're not invincible, take damage and stay invincible
-    private void OnCollisionEnter2D(Collision2D collisionInfo)
+    void OnTriggerEnter2D(Collider2D hitInfo)
     {
-
-        if (collisionInfo.collider.name == "Bullet")
+        if (hitInfo.tag == "PlayerWeapon")
         {
             currentHealth -= damageTaken;
-
-            healthBar.SetHealth(currentHealth);
-
-
+            Debug.Log("enemy is hit");
         }
     }
 

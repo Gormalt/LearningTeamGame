@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;
     public int damageTaken = 1;
     public bool invincible = false;
-    public int invincibleTimer = 2;
+    public int invincibleTimer = 1;
 
     public HealthBarScript healthBar;
 
